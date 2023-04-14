@@ -1,0 +1,30 @@
+/* pages/naming.wxss */
+
+.row {
+    margin: 0rpx 30rpx 30rpx 30rpx;
+}
+
+.row-label {
+    margin-bottom: 25rpx;
+    color: #99A5C1;
+}
+
+.row-input {
+    border-bottom: solid 1rpx #D9D9D9;
+    border-top: solid 1rpx #D9D9D9;
+    height: 75rpx;
+}
+
+.about {
+    color: #808080;
+    border: 1rpx dotted;
+    min-height: 100rpx;
+    padding: 20rpx;
+    margin: 100rpx 30rpx 0 30rpx;
+}
+
+
+.picker {
+    padding-top: 20rpx;
+    border-radius: 50rpx;
+}

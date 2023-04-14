@@ -1,0 +1,43 @@
+<view style="background-color: #f1f1f1; height: 100%;">
+
+    <view class="row">
+        <view class="row-label">目标语言</view>
+        <view>
+            <view>
+                <picker class="row-input" mode="selector" bindchange="bindPickerChange" range="{{list}}" value="{{mainSelected}}">
+                    <view class="picker">
+                        {{list[mainSelected]}}
+                    </view>
+                </picker>
+            </view>
+        </view>
+    </view>
+
+    <view class="row">
+        <view class="row-label">翻译内容</view>
+        <view>
+            <view>
+                <view style="margin: 30rpx 0; height: 60%;">
+                    <input rows="8" name="input" maxlength="1000" class="row-input" bindchange="bindConetent" />
+                </view>
+            </view>
+        </view>
+    </view>
+
+
+
+    <view style="display: flex; justify-content: center; margin: 0 30rpx; ">
+        <button type="primary" size="mini" bindtap="naming" style="background-color: #153977;">点击翻译</button>
+    </view>
+
+
+    <view wx:if="{{result === ''}}" class="about">
+        <text>大数据翻译效果秒杀各路机翻</text>
+        <text>
+            如果您正在寻找一种快速、准确、可靠的大数据翻译服务，那么您来对地方了！我们的大数据翻译技术可以在瞬间翻译数以百万计的文本，并提供高质量的翻译结果。无论您是需要翻译技术文档、市场调研报告还是用户评论，我们都能够满足您的需求。我们深知大数据翻译的重要性，因此我们致力于为客户提供最好的翻译服务。选择我们，您将获得最优质的大数据翻译服务！
+        </text>
+    </view>
+    <view wx:else class="about">
+        <text user-select>{{result}}</text>
+    </view>
+</view>

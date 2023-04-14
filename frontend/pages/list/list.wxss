@@ -1,0 +1,31 @@
+
+
+.container {
+    background-color: #f1f1f1;
+    padding: 40rpx;
+    height: 100%;
+  }
+  .title {
+    text-align: center;
+    font-size: 40rpx;
+    color: #153977;
+    margin-bottom: 40rpx;
+  }
+  .button-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30rpx;
+  }
+  .button {
+    background-color: #153977;
+    color: #fff;
+    border: none;
+    border-radius: 8rpx;
+    padding: 20rpx 40rpx;
+    font-size: 28rpx;
+  }
+
+  .un-dev {
+    background-color: gray;
+  }

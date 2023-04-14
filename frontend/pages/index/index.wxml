@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+   
+    <block >
+      <button bindtap="getUserProfile"> 获取头像昵称 </button>
+    </block>
+
+  </view>
+  <view class="usermotto">
+    <block>
+      <text class="user-motto">{{nickName}}</text>
+    </block>
+  </view>
+
+  <view class="usermotto">
+    <block>
+      <image class="userinfo-avatar" src="{{avatarUrl}}" mode="cover"></image>
+    </block>
+  </view>
+</view>

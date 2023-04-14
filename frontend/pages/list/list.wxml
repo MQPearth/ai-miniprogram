@@ -1,0 +1,24 @@
+<view class="container">
+  <view class="title">人工智能大数据免费开放使用</view>
+ 
+  <view class="button-group">
+    <button class="button" style="margin: 0 8rpx 0 5rpx" bindtap="naming">大数据取名</button>
+    <button class="button" style="margin: 0 8rpx 0 5rpx" bindtap="translate">大数据翻译</button>
+  </view>
+
+  <view class="button-group">
+    <button class="button un-dev" style="margin: 0 8rpx 0 5rpx" bindtap="dev">大数据菜谱</button>
+    <button class="button un-dev" style="margin: 0 8rpx 0 5rpx" bindtap="dev">英语语法修正</button>
+  </view>
+
+  <view class="button-group">
+    <button class="button un-dev" style="margin: 0 8rpx 0 5rpx" bindtap="dev">笔记摘要生成</button>
+    <button class="button" style="margin: 0 8rpx 0 5rpx" bindtap="ad">广告文案</button>
+  </view>
+
+  <view class="button-group">
+    <button class="button" style="margin: 0 8rpx 0 5rpx" bindtap="feedback">提交反馈</button>
+    <button class="button un-dev" style="margin: 0 5rpx 0 8rpx" bindtap="more">敬请期待</button>
+
+  </view>
+</view>

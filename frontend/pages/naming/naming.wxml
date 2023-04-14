@@ -1,0 +1,71 @@
+<view style="background-color: #f1f1f1; height: 100%;">
+    <view class="row">
+        <view class="row-label">性别</view>
+        <radio-group name="gender" bindchange="bindGender">
+            <label>
+                <radio value="男" checked/>男
+            </label>
+            <label style="margin-left: 30rpx;">
+                <radio value="女" />女
+            </label>
+        </radio-group>
+    </view>
+
+    <view class="row">
+        <view class="row-label">姓氏</view>
+        <view>
+            <view>
+                <view style="margin: 30rpx 0">
+                    <input name="input" maxlength="2" class="row-input" bindchange="bindSurname" />
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class="row">
+        <view class="row-label">风格</view>
+        <view>
+            <view>
+                <picker class="row-input" mode="selector" bindchange="bindPickerChange" range="{{list}}" value="{{selected}}">
+                    <view class="picker">
+                        {{list[selected]}}
+                    </view>
+                </picker>
+            </view>
+        </view>
+    </view>
+
+    <view class="row">
+        <view class="row-label">名字长度</view>
+        <view>
+            <view>
+                <view style="margin: 30rpx 0">
+                    <input name="input" maxlength="2" type="number" class="row-input" bindchange="bindLength" value="3"/>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class="row">
+        <view class="row-label">生成数量</view>
+        <view>
+            <view>
+                <view style="margin: 30rpx 0">
+                    <input name="input" maxlength="2" type="number" class="row-input" bindchange="bindQty" value="5"/>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view style="display: flex; justify-content: center; margin: 0 30rpx; ">
+        <button type="primary" size="mini" bindtap="naming" style="background-color: #153977;">点击生成</button>
+    </view>
+
+
+    <view wx:if="{{result === ''}}" class="about">
+        使用最新科技人工智能大数据加持, 并结合中国传统生辰八字阴阳风水, 为您的宝宝取一个与众不同却又充满内涵的名字
+    </view>
+    <view wx:else class="about">
+        <text user-select>{{result}}</text>
+    </view>
+</view>

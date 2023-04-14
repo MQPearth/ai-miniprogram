@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/list/list",
+    "pages/translate/translate",
+    "pages/naming/naming",
+    "pages/ad/ad",
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

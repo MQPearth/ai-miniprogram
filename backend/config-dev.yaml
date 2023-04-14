@@ -1,0 +1,46 @@
+server:
+  port: 7099
+  ## debug/release
+  gin-mode: "release"
+
+ai:
+  token: "sk-xxx"
+  model: "gpt-3.5-turbo"
+  enable-proxy: true
+  proxy: "http://localhost:7890"
+
+weixin:
+  appid: xxxx
+  secret: xxxx
+  version: "0.1.2"
+
+mysql:
+  url: "192.168.1.1"
+  port: "3306"
+  config: "charset=utf8mb4&parseTime=True&loc=Local"
+  db-name: "ai"
+  username: "root"
+  password: "xxxx"
+  prefix: ""
+  singular: false
+  engine: ""
+  max-idle-conns: 10
+  max-open-conns: 100
+  log-mode: error
+  log-zap: false
+
+redis:
+  url: "192.168.1.1:6379"
+  db: 0
+  password:
+
+zap:
+  level: info
+  prefix: ''
+  format: console
+  director: log
+  encode-level: LowercaseColorLevelEncoder
+  stacktrace-key: stacktrace
+  max-age: 0
+  show-line: true
+  log-in-console: true

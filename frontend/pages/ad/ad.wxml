@@ -1,0 +1,30 @@
+<view style="background-color: #f1f1f1; height: 100%;">
+
+    <view class="row">
+        <view class="row-label">产品名称和特点</view>
+        <view>
+            <view>
+                <view style="margin: 30rpx 0; height: 60%;">
+                    <input rows="8" name="input" maxlength="1000" class="row-input" bindchange="bindConetent" />
+                </view>
+            </view>
+        </view>
+    </view>
+
+
+
+    <view style="display: flex; justify-content: center; margin: 0 30rpx; ">
+        <button type="primary" size="mini" bindtap="naming" style="background-color: #153977;">点击生成</button>
+    </view>
+
+
+    <view wx:if="{{result === ''}}" class="about">
+        <text>大数据广告文案效果秒杀各路二流运营</text>
+        <text>
+            大数据，做出智慧的决策！我们的广告文案支持您的业务发展，让您的数据变得更具有说服力，更有效果。借助大数据的算法和分析能力，我们可以帮您发掘出潜在的机会，解决问题和优化您的业务流程。立即选择我们的大数据服务，让我们与您一起开创美好的商业新世界。
+        </text>
+    </view>
+    <view wx:else class="about">
+        <text user-select>{{result}}</text>
+    </view>
+</view>
